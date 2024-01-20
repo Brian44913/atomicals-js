@@ -1017,9 +1017,9 @@ export class AtomicalOperationBuilder {
                     this.bitworkInfoReveal?.ext as any
                 )
             ) {
-                process.stdout.clearLine(0);
-                process.stdout.cursorTo(0);
-                process.stdout.write(
+                process.stdout.clearLine?.(0);
+                process.stdout.cursorTo?.(0);
+                process.stdout.write?.(
                     chalk.green(checkTxid, " nonces: " + noncesGenerated)
                 );
                 console.log(
